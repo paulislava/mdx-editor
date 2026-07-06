@@ -1,0 +1,34 @@
+{
+    "application": {
+        "description": "Пакет с Mdx-редактором",
+        "frontendType": "other",
+        "engines": {
+            "node": "18.12.0"
+        }
+    },
+    "members": {
+        "releasers": ["pokondratov@sberbank.ru"],
+        "contributors": ["pokondratov@sberbank.ru"],
+        "qaEngineers": ["kalitvinov@sberbank.ru"]
+    },
+    "ci": {
+        "jobs": {
+            "build-sb": {
+                "enabled": true
+            },
+            "deploy-sb": {
+                "enabled": true
+            },
+            "test": {
+                "enabled": false
+            },
+            "lint": {
+                "enabled": false
+            },
+            "canary": {
+                "enabled": true
+            }
+        },
+        "kits": ["publish"]
+    }
+}

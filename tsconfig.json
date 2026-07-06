@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "lib": ["ES2020", "DOM"],
+        "target": "ES2019",
+        "allowJs": true,
+        "checkJs": false,
+        "jsx": "react",
+
+        "strict": false,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "incremental": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+
+    "include": ["src", "src/**/*.json"],
+
+    "exclude": [
+        "node_modules/",
+        "dist/",
+
+        // Do not include test files
+        "**/*.test.ts"
+    ]
+}
