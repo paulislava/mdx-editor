@@ -2,6 +2,14 @@
   "name": "@paulislava/mdx-editor",
   "version": "0.1.15",
   "description": "Package with a mdx editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulislava/mdx-editor.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
